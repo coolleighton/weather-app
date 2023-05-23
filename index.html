@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+</script>
+</head>
+<body class="body">
+<div class="row">
+  <div class="columnLeft">
+    
+    <div class="leftCard">
+      <h1>Enter Your City</h1>
+      <div class="searchBar">
+        <input class="searchField" type="text" placeholder="Search" value="Cardiff">
+        <button class="searchButton"><svg class="searchIcon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
+        <p class="smallDescription">Here's whats going on in <span class="cityCountryName"> Cardiff, GB</span><img class="flag" src="https://flagsapi.com/GB/flat/64.png"></p>
+  
+      </div>
+    </div>
+    <div class="leftCard2">
+      <h1>Here's The Weather</h1>
+      <div class="weatherDescDiv">
+        <img class="icon" src="https://openweathermap.org/img/wn/04d.png" alt="">
+        <p class="description">Cloudy</p>
+      </div>
+      <div>
+        <p class="clouds">Clouds: 20%</p>
+        <p class="visibility">Visibility: 10Km </p>
+      </div>
+      <div class="temperature">
+        <p class="temp">Current Temperature: 10°C</p>
+        <p class="feelsLike">Feels Like: 8°C</p>
+        <p class="tempMax">Max Temperature: 12°C</p>
+        <p class="tempMin">Min Temperature: 5°C</p>
+      </div>
+    </div>
+  </div>  
+  <div class="columnMid">
+    <div class="midCard">
+      <h1>Here's Your City On A Map</h1>
+      <div class="coordinates">
+        <p class="latitude">latitude: 10.00 </p>
+        <p class="longitude">longitude: 5.00 </p>
+      </div>
+      <div id="map"></div>
+    </div>
+  </div>
+  <div class="columnRight">
+    <div class="rightCard">
+      <h1 class="rightCardTitle">Here's The Sunrise And Sunset</h1>
+      <p>Sunrise/Sunset Time in GMT</p>
+      <div class="sun">
+        <p class="sunrise">Sunrise: 8:00</p>
+        <p class="sunset">Sunset: 10:00</p>
+      </div>
+      <p>Sunrise/Sunset Time in Local time</p>
+      <div class="sunLocal">
+        <p class="sunriseLocal">Sunrise: 8:00</p>
+        <p class="sunsetLocal">Sunset: 10:00</p>
+      </div>
+    </div>
+    <div class="rightCard2">
+      <h1>Here's Some Extra Info</h1>
+      <p class="humidity">Humidity: 20%</p>
+      <p class="pressure">Pressure: 990hPa</p>
+      <p class="windSpeed">Wind Speed: 20km/h</p>
+      <p class="direction">Wind Direction: 60°</p>
+    </div>
+  </div>
+</div>
+<p class="copy">
+  © Built by leighton coughlin 2023. See other projects <a href="https://github.com/leightoncoughlin">here</a></p>
+  <script src="index.js"></script>
+</body>
+</html> 

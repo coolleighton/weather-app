@@ -1,0 +1,240 @@
+body{
+    background-image: url("https://source.unsplash.com/1920x1080/?tokyo;"); 
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.leftCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 4%;
+    padding: 20px;
+    width: 500px;
+    background-color: #202020de;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.searchField {
+    border: none;
+    outline: none;
+    background-color: #2e2e2e;
+    padding: 8px;
+    border-radius: 20px;
+    color: white;
+    padding-left: 15px;
+}
+
+.searchField:hover {
+    background-color: #535353;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.searchIcon {
+    transform: scale(1.1);
+}
+
+.searchButton {
+    padding: 8px;
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchButton:hover {
+    background-color: #535353;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cityCountryName{
+    text-transform: capitalize;
+}
+
+.flag{
+    padding-left: 5px;
+    width: 25px;
+    object-position: 0 5px;
+}
+
+.leftCard2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 500px;
+    background-color: #202020de;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 0.8;
+}
+
+.weatherDescDiv{ 
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.icon {
+    padding-right: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
+}
+
+.description {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.temperature p {
+    font-size: 25px;
+}
+
+.midCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    width: 550px;
+    background-color: #202020de;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#map {
+    height: 500px; 
+    border-radius: 20px;
+}
+
+.rightCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
+    margin-right: 50px;
+    padding: 0 20px 10px 20px;
+    width: 500px;
+    background-color: #202020de;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+}
+
+.rightCardTitle {
+    font-size: 40px;
+    margin-bottom: -5px;
+}
+
+.coordinates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 0;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.latitude {
+    padding-right: 50px;
+}
+
+.ExtraInfoWeather{
+    font-size: 20px;
+}
+
+.sun {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 0;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+.sunrise {
+    padding-right: 20px;
+}
+
+.sunLocal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 0;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+.sunriseLocal {
+    padding-right: 20px;
+}
+
+.rightCard2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
+    margin-right: 50px;
+    padding: 0 20px 10px 20px;
+    width: 500px;
+    background-color: #202020de;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.rightCard2 p {
+    font-size: 25px;
+    line-height: 0;
+}
+
+.copy {
+    position: absolute;
+    font-size: 15px;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans', sans-serif;
+    padding: 15px;
+    background-color: #202020de;
+    border-radius: 20px;
+}
+
+.copy a{ 
+    color: white;
+}
+
+
+
+
+
+ 
+
+
+
